@@ -1,0 +1,75 @@
+%a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background: linear-gradient(rgb(21, 94, 117, 0.3), rgb(22, 78, 99, 0.2)),
+    no-repeat center / cover url("../imgs/endless-constellation.png");
+  height: 100vh;
+}
+
+.header__links {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  .nav__links {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    gap: 4rem;
+  }
+  .logo__link {
+    @extend %a;
+    &:link,
+    &:visited {
+      color: $primary-color-dark;
+      font-family: "Courgette", serif;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-size: 2rem;
+    }
+  }
+}
+
+.link__item {
+  @extend %a;
+
+  &:link,
+  &:active {
+    padding: 0.6rem 0;
+  }
+
+  &:hover,
+  &:active {
+    color: $primary-color;
+  }
+}
+
+.link__item--contact {
+  border: 0.1rem solid $primary-color;
+  &:link,
+  &:active {
+    border-radius: 0.2rem;
+    padding: 1rem 1.8rem;
+    transition: all 0.3s;
+  }
+  &:hover {
+    color: #3f3f46;
+    background: $primary-color;
+  }
+}
+
+.animated-border::after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.2rem $primary-color;
+  margin-top: 1.1rem;
+  transform: scaleX(0);
+  transition: all 250ms;
+}
+
+.animated-border:hover::after {
+  transform: scaleX(1);
+}
