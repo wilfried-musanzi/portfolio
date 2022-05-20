@@ -36,19 +36,20 @@ body {
   margin: 0 auto;
 }
 
-.animated-border {
+.animated-border-link,
+.animated-border-title {
   &::after {
     display: block;
     content: "";
     border-bottom: solid 0.2rem $primary-color-dark;
     margin-top: 1.1rem;
     transform: scaleX(0);
-    transform-origin: 0 50%;
     transition: all 0.4s;
   }
 }
 
-.animated-border {
+.animated-border-link {
+  transform-origin: 0% 50%;
   &:hover::after {
     transform: scaleX(1);
   }
@@ -56,11 +57,6 @@ body {
 
 .animated-border-title {
   &::after {
-    display: block;
-    content: "";
-    border-bottom: solid 0.2rem $primary-color;
-    margin-top: 1.1rem;
-    transform: scaleX(0);
     animation: animatedBorder infinite 4s;
   }
 }
