@@ -65,13 +65,14 @@
 }
 
 .img-me {
-  width: 41%;
+  width: 41.5%;
   height: auto;
   position: absolute;
   top: -8rem;
   right: 7rem;
   z-index: -1;
   filter: brightness(40%);
+  animation: fadInPicture 0.3s ease-in-out 0.4s backwards;
   opacity: 0.5;
 }
 
@@ -93,6 +94,7 @@
     font-size: 8rem;
     letter-spacing: 0.3rem;
     font-family: "Playfair Display", sans-serif;
+    animation: fadIn 0.3s ease-in-out 0.1s backwards;
   }
 
   .presentation__lastname {
@@ -104,5 +106,31 @@
     font-size: 4rem;
     letter-spacing: 0.3rem;
     font-weight: 300;
+    animation: fadIn 0.3s ease-in-out 0.3s backwards;
+  }
+}
+
+@keyframes fadIn {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadInPicture {
+  0% {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.5;
   }
 }
