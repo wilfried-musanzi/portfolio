@@ -4,7 +4,7 @@
 }
 
 .header {
-  background-color: rgb(22, 79, 100, 0.3);
+  background-color: rgb(29, 53, 87, 0.9);
   height: 100vh;
   position: relative;
   z-index: 1;
@@ -33,7 +33,6 @@
       padding: 1.5rem 1.2rem;
       color: $primary-color-dark;
       font-family: "Tangerine", sans-serif;
-      font-weight: 500;
       text-transform: uppercase;
       font-size: 2rem;
       letter-spacing: 0.3rem;
@@ -75,9 +74,9 @@
   top: -8rem;
   right: 7rem;
   z-index: -1;
-  filter: brightness(40%);
-  animation: fadInPicture 0.5s ease-in-out 0.4s backwards;
-  opacity: 0.5;
+  filter: blur(0) brightness(35%);
+  animation: fadInPicture 0.4s ease-in-out 0.7s backwards;
+  opacity: 0.7;
 }
 
 .header__presentation {
@@ -98,7 +97,7 @@
     font-size: 8rem;
     letter-spacing: 0.3rem;
     font-family: "Playfair Display", sans-serif;
-    animation: fadIn 0.3s ease-in-out 0.1s backwards;
+    animation: fadIn 0.4s ease-in-out 0.2s backwards;
   }
 
   .presentation__lastname {
@@ -110,13 +109,13 @@
     font-size: 4rem;
     letter-spacing: 0.3rem;
     font-weight: 300;
-    animation: fadIn 0.3s ease-in-out 0.3s backwards;
+    animation: fadIn 0.3s ease-in-out 0.4s backwards;
   }
 }
 
 @keyframes fadIn {
   0% {
-    transform: translateY(10rem);
+    transform: translateY(5rem);
     opacity: 0;
   }
 
@@ -128,12 +127,14 @@
 
 @keyframes fadInPicture {
   0% {
-    transform: translateX(10rem);
+    transform: translateY(-2rem);
     opacity: 0;
+    filter: blur(1rem) brightness(40%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 0.5;
+    filter: blur(1rem) brightness(40%);
   }
 }
 
@@ -141,7 +142,7 @@
   0% {
     transform: scale(1);
   }
-  80% {
+  60% {
     transform: scale(1.1);
   }
 }

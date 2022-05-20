@@ -1,3 +1,41 @@
-.main__services {
-  height: 100vh;
+.section__services {
+  background: #001d3d;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+.card__services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+}
+
+.logo__item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.logo__service {
+  color: $primary-color;
+  stroke: $primary-color;
+}
+
+.card {
+  padding: 5rem 6rem;
+  border-radius: 0.4rem;
+  border: 0.1rem solid $primary-color-light;
+  &:hover {
+    border: 0.1rem solid $primary-color-dark;
+    .heading__tertiary {
+      color: $primary-color-dark;
+    }
+  }
+}
+
+.card__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.14rem;
+  font-weight: 300;
+  line-height: 2rem;
 }
