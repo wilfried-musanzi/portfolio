@@ -61,15 +61,16 @@ body {
   }
 }
 
-@keyframes animatedBorder {
-  0% {
-    transform: scaleX(1);
-  }
-}
 .heading__primary {
   color: $primary-color-dark;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-weight: 600;
+}
+
+@keyframes animatedBorder {
+  0% {
+    transform: scaleX(1);
+  }
 }
