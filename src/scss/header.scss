@@ -4,10 +4,115 @@
 }
 
 .header {
-  background-color: #005f73;
+  background: $secondary-color;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 60%);
+  padding: 5rem;
+}
+
+.header__nav {
   display: flex;
-  justify-content: center;
-  color: $text-color;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+}
+
+.nav__header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  .nav__item {
+    list-style: none;
+  }
+}
+
+.nav__logo {
+  &:link,
+  &:visited {
+    @extend %a;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    border: solid 0.1rem $text-color-primary;
+    color: $text-color-primary;
+    transition: all 0.4s;
+    animation: animateLogo infinite 3s;
+  }
+  &:hover,
+  &:active {
+    border: solid 0.1rem $text-color-secondary;
+  }
+}
+
+.nav__link {
+  &:link,
+  &:visited {
+    @extend %a;
+    padding: 1.5rem 0;
+    position: relative;
+    display: inline-block;
+    color: $text-color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    letter-spacing: 0.2rem;
+  }
+
+  &:hover,
+  &:active {
+    color: $text-color-primary;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 0.2rem solid $text-color-primary;
+    width: 0;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    transform: scale(1);
+  }
+}
+
+.nav__link--contact {
+  &:link,
+  &:visited {
+    padding: 1.5rem 3rem;
+    border: solid 0.1rem $text-color-primary;
+    border-radius: 0.3rem;
+    transition: all 0.4s;
+    animation: animateContactLink infinite ease-in 2s backwards;
+  }
+
+  &:hover,
+  &:active {
+    background: $text-color-primary;
+    color: #001d3d;
+  }
+
+  &::before {
+    display: none;
+  }
+}
+
+@keyframes animateLogo {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes animateContactLink {
+  50% {
+    border: solid 0.1rem $text-color-secondary;
+  }
 }

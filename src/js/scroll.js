@@ -1,3 +1,3 @@
 const fullpage = require("fullpage.js");
 
-new fullpage(".fullpage");
+new fullpage(".scroll");
