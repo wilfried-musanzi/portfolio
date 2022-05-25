@@ -1,3 +1,5 @@
+$text-color: #ffffff;
+
 *,
 *::after,
 *::before {
@@ -11,10 +13,11 @@ html {
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: sans-serif;
   line-height: 1;
   font-size: 1.6rem;
   font-weight: 400;
+  overflow-y: scroll;
 }
 
 .container {
@@ -22,3 +25,30 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+
+.section {
+  display: flex;
+  justify-content: center;
+  color: $text-color;
+  align-items: center;
+  background-color: #005f73;
+  height: 100vh;
+  // transform: translateY(-100%);
+  // opacity: 0;
+  // transition: all 2s;
+}
+
+// // .section__hidden {
+// //   opacity: 0;
+// // }
+
+// .section__visible {
+//   display: flex;
+//   justify-content: center;
+//   color: $text-color;
+//   align-items: center;
+//   background-color: #005f73;
+//   height: 100vh;
+//   // transform: translateY(0);
+//   opacity: 1;
+// }

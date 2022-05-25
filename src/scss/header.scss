@@ -2,3 +2,12 @@
   text-decoration: none;
   color: inherit;
 }
+
+.header {
+  background-color: #005f73;
+  display: flex;
+  justify-content: center;
+  color: $text-color;
+  align-items: center;
+  height: 100vh;
+}
