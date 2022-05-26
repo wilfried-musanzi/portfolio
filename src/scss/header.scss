@@ -5,14 +5,15 @@
 
 .header {
   background: $secondary-color;
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 60%);
-  padding: 5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
+  padding: 5rem 5rem 0 5rem;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .nav__header {
@@ -30,13 +31,14 @@
     @extend %a;
     display: inline-block;
     border-radius: 50%;
-    padding: 1.5rem 1.2rem;
-
+    padding: 1.5rem 1rem;
+    font-weight: 600;
     border: solid 0.1rem $text-color-primary;
     color: $text-color-primary;
     transition: all 0.4s;
-    animation: animateLogo infinite 3s;
+    // animation: animateLogo infinite 3s;
   }
+
   &:hover,
   &:active {
     border: solid 0.1rem $text-color-secondary;
@@ -51,7 +53,8 @@
     position: relative;
     display: inline-block;
     color: $text-color;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    // font-weight: 600;
     text-transform: uppercase;
     transition: all 0.5s;
     letter-spacing: 0.2rem;
@@ -67,8 +70,8 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    border-bottom: 0.2rem solid $text-color-primary;
     width: 0;
+    border-bottom: 0.2rem solid $text-color-primary;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -103,6 +106,46 @@
   }
 }
 
+.header__body {
+  display: flex;
+  .header__presentation {
+    padding-top: 15rem;
+    font-family: "Playfair Display", sans-serif;
+
+    .presentaion__hello {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .presentaion__name,
+    .presentaion__lastname {
+      font-size: 5rem;
+      color: $text-color-primary;
+    }
+    .presentaion__lastname {
+      margin-bottom: 4rem;
+    }
+
+    .presentaion__job {
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.2rem;
+      font-size: 3rem;
+    }
+  }
+
+  .hero__img {
+    align-self: flex-end;
+    .img__fig {
+      .img__me {
+        width: 50%;
+        opacity: 0.9;
+        filter: brightness(0.7);
+      }
+    }
+  }
+}
+
 @keyframes animateLogo {
   0% {
     transform: scale(1);
@@ -115,5 +158,14 @@
 @keyframes animateContactLink {
   50% {
     border: solid 0.1rem $text-color-secondary;
+  }
+}
+
+@media only screen and (max-width: 64rem) {
+  html {
+    font-size: 50%;
+  }
+  .hero__img {
+    right: 0;
   }
 }
