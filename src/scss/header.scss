@@ -4,16 +4,15 @@
 }
 
 .header {
-  background: $secondary-color;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 80%);
-  padding: 5rem 5rem 0 5rem;
+  background: linear-gradient(rgb(73, 80, 87, 0.15), rgb(73, 80, 87, 0.6));
+  padding: 5rem;
+  position: relative;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1;
 }
 
 .nav__header {
@@ -36,6 +35,7 @@
     border: solid 0.1rem $text-color-primary;
     color: $text-color-primary;
     transition: all 0.4s;
+    // font-size: 2rem;
     // animation: animateLogo infinite 3s;
   }
 
@@ -53,8 +53,7 @@
     position: relative;
     display: inline-block;
     color: $text-color;
-    font-size: 2rem;
-    // font-weight: 600;
+    font-size: 1.5rem;
     text-transform: uppercase;
     transition: all 0.5s;
     letter-spacing: 0.2rem;
@@ -108,41 +107,44 @@
 
 .header__body {
   display: flex;
-  .header__presentation {
-    padding-top: 15rem;
-    font-family: "Playfair Display", sans-serif;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
 
-    .presentaion__hello {
-      font-size: 3rem;
-      margin-bottom: 2rem;
-    }
+.img__me {
+  align-self: flex-end;
+  display: block;
+  width: 40%;
+  height: 100%;
+  height: auto;
+  opacity: 0.9;
+  filter: brightness(0.7);
+  z-index: -1;
+}
 
-    .presentaion__name,
-    .presentaion__lastname {
-      font-size: 5rem;
-      color: $text-color-primary;
-    }
-    .presentaion__lastname {
-      margin-bottom: 4rem;
-    }
+.header__presentation {
+  font-family: "Playfair Display", sans-serif;
 
-    .presentaion__job {
-      font-family: "Inter", sans-serif;
-      font-weight: 300;
-      letter-spacing: 0.2rem;
-      font-size: 3rem;
-    }
+  .presentaion__hello {
+    font-size: 3rem;
+    margin-bottom: 2rem;
   }
 
-  .hero__img {
-    align-self: flex-end;
-    .img__fig {
-      .img__me {
-        width: 50%;
-        opacity: 0.9;
-        filter: brightness(0.7);
-      }
-    }
+  .presentaion__name,
+  .presentaion__lastname {
+    font-size: 5rem;
+    color: $text-color-primary;
+  }
+  .presentaion__lastname {
+    margin-bottom: 6rem;
+  }
+
+  .presentaion__job {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
   }
 }
 
@@ -161,11 +163,18 @@
   }
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media only screen and (max-width: 64rem) {
   html {
     font-size: 50%;
-  }
-  .hero__img {
-    right: 0;
   }
 }
