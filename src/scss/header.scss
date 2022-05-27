@@ -4,7 +4,6 @@
 }
 
 .header {
-  background: linear-gradient(rgb(73, 80, 87, 0.15), rgb(73, 80, 87, 0.6));
   padding: 5rem;
   position: relative;
 }
@@ -35,8 +34,6 @@
     border: solid 0.1rem $text-color-primary;
     color: $text-color-primary;
     transition: all 0.4s;
-    // font-size: 2rem;
-    // animation: animateLogo infinite 3s;
   }
 
   &:hover,
@@ -118,7 +115,6 @@
   width: 40%;
   height: 100%;
   height: auto;
-  opacity: 0.9;
   filter: brightness(0.7);
   z-index: -1;
 }
@@ -136,14 +132,15 @@
     font-size: 5rem;
     color: $text-color-primary;
   }
+
   .presentaion__lastname {
     margin-bottom: 6rem;
   }
 
   .presentaion__job {
     font-family: "Inter", sans-serif;
-    font-weight: 300;
-    letter-spacing: 0.2rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
     font-size: 3rem;
   }
 }
@@ -170,11 +167,5 @@
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@media only screen and (max-width: 64rem) {
-  html {
-    font-size: 50%;
   }
 }
