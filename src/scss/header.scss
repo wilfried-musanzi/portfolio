@@ -104,37 +104,36 @@
 
 .header__body {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  height: 100%;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 
-.img__me {
+.header__img {
+  width: 50%;
   align-self: flex-end;
-  display: block;
-  width: 40%;
-  height: 100%;
-  height: auto;
-  filter: brightness(0.7);
-  z-index: -1;
+  .img__me {
+    align-self: flex-end;
+    display: block;
+    width: 80%;
+    height: 80%;
+    filter: brightness(0.7);
+  }
 }
 
 .header__presentation {
   font-family: "Playfair Display", sans-serif;
-
   .presentaion__hello {
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
   }
 
-  .presentaion__name,
-  .presentaion__lastname {
-    font-size: 5rem;
+  .presentaion__name {
+    font-size: 10rem;
     color: $text-color-primary;
-  }
-
-  .presentaion__lastname {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
   }
 
   .presentaion__job {
