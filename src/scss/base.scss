@@ -22,6 +22,7 @@ body {
   line-height: 1;
   font-size: 1.6rem;
   font-weight: 400;
+  color: $text-color;
 }
 
 .container {
@@ -32,4 +33,26 @@ body {
 
 .section {
   height: 100vh;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: $text-color-primary;
+  margin-bottom: 2rem;
+}
+
+.section__subtitle {
+  font-size: 5rem;
+  font-family: "Playfair Display", sans-serif;
+  margin-bottom: 8rem;
+}
+
+.grid--4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
 }

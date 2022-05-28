@@ -18,6 +18,11 @@
     }
   }
 
+  .grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
   .header__presentation {
     padding-top: 0;
     .presentaion__hello {
