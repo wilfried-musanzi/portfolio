@@ -17,11 +17,11 @@ html {
 }
 
 body {
-  background: no-repeat center / cover url("../imgs/subtle-prism.svg");
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1;
   font-size: 1.6rem;
   font-weight: 400;
+  background: #151118;
   color: $text-color;
 }
 
@@ -30,19 +30,14 @@ body {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
+.sub-container {
+  max-width: 80rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
 
 .section {
   height: 100vh;
-}
-
-.section__title {
-  font-size: 2rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-  color: $text-color-primary;
-  margin-bottom: 2rem;
 }
 
 .section__subtitle {
@@ -51,8 +46,21 @@ body {
   margin-bottom: 8rem;
 }
 
-.grid--4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
+.gradient-text {
+  text-align: center;
+  background-color: rgb(255, 178, 62);
+  background-image: linear-gradient(
+    268.67deg,
+    rgb(255, 240, 102) 15%,
+    rgb(255, 163, 26) 56%,
+    rgb(255, 0, 115) 100%
+  );
+
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }

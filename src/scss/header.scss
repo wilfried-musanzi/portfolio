@@ -2,44 +2,20 @@
   text-decoration: none;
   color: inherit;
 }
-
 .header {
   padding: 5rem;
-  position: relative;
+}
+.hero__navigation {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.header__nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.nav__item {
+  list-style: none;
 }
-
-.nav__header {
+.nav__list {
   display: flex;
-  align-items: center;
   gap: 2rem;
-  .nav__item {
-    list-style: none;
-  }
-}
-
-.nav__logo {
-  &:link,
-  &:visited {
-    @extend %a;
-    display: inline-block;
-    border-radius: 50%;
-    padding: 1.5rem 1rem;
-    font-weight: 600;
-    border: solid 0.1rem $text-color-primary;
-    color: $text-color-primary;
-    transition: all 0.4s;
-  }
-
-  &:hover,
-  &:active {
-    border: solid 0.1rem $text-color-secondary;
-  }
 }
 
 .nav__link {
@@ -49,7 +25,6 @@
     padding: 1.5rem 0;
     position: relative;
     display: inline-block;
-    color: $text-color;
     font-size: 1.5rem;
     text-transform: uppercase;
     transition: all 0.5s;
@@ -58,7 +33,7 @@
 
   &:hover,
   &:active {
-    color: $text-color-primary;
+    color: rgb(255, 0, 115);
   }
 
   &::before {
@@ -67,7 +42,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom: 0.2rem solid $text-color-primary;
+    border-bottom: 0.2rem solid rgb(255, 0, 115);
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -84,88 +59,36 @@
 .nav__link--contact {
   &:link,
   &:visited {
+    background-color: rgb(255, 0, 115);
+    display: inline-block;
+    border-radius: 0.4rem;
     padding: 1.5rem 3rem;
-    border: solid 0.1rem $text-color-primary;
-    border-radius: 0.3rem;
-    transition: all 0.4s;
-    animation: animateContactLink infinite ease-in 2s backwards;
-  }
-
-  &:hover,
-  &:active {
-    background: $text-color-primary;
-    color: #001d3d;
+    transition: all 0.3s;
   }
 
   &::before {
     display: none;
   }
-}
 
-.header__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
-
-.bg-blur {
-  background: rgb(109, 104, 117, 0.5);
-}
-.header__img {
-  width: 50%;
-  align-self: flex-end;
-  .img__me {
-    align-self: flex-end;
-    display: block;
-    width: 100%;
-    opacity: 0.8;
-    animation: fadeIn 0.3s ease-in;
+  &:hover,
+  &:active {
+    background-color: rgb(209, 7, 98);
+    color: $text-color;
   }
 }
 
-.header__presentation {
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 400;
-  padding-top: 12rem;
-  .presentaion__hello {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    animation: fadeIn 0.3s ease-in 0.6s backwards;
-  }
-
-  .presentaion__name {
-    font-size: 10rem;
-    margin-bottom: 4rem;
-    animation: fadeIn 0.3s ease-in;
-  }
-
-  .presentaion__job {
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.3rem;
-    font-size: 3rem;
-    color: $text-color-primary;
-    animation: fadeIn 0.3s ease-in 0.6s backwards;
-  }
+.hero__presentation {
+  font-size: 5rem;
+  // text-align: center;
+  margin-top: 18%;
+  margin-bottom: 4rem;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes animateContactLink {
-  50% {
-    border: solid 0.1rem $text-color-secondary;
-  }
+.presentation__job {
+  font-size: 2rem;
+  line-height: 3rem;
 }
