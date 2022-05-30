@@ -1,0 +1,25 @@
+@media only screen and(max-width: 59rem ) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero__presentation {
+    font-size: 4rem;
+  }
+  .hero__name {
+    display: block;
+    margin-top: 2rem;
+    text-align: left;
+    font-size: 5rem;
+  }
+}
+
+@media only screen and(max-width: 30rem ) {
+  .hero__presentation {
+    font-size: 3rem;
+  }
+
+  .hero__name {
+    font-size: 5rem;
+  }
+}

@@ -2,9 +2,11 @@
   text-decoration: none;
   color: inherit;
 }
+
 .header {
   padding: 5rem;
 }
+
 .hero__navigation {
   display: flex;
   justify-content: flex-end;
@@ -59,7 +61,8 @@
 .nav__link--contact {
   &:link,
   &:visited {
-    background-color: rgb(255, 0, 115);
+    border: solid 0.1rem rgb(255, 0, 115);
+    border-radius: 0.4rem;
     display: inline-block;
     border-radius: 0.4rem;
     padding: 1.5rem 3rem;
@@ -72,23 +75,44 @@
 
   &:hover,
   &:active {
-    background-color: rgb(209, 7, 98);
     color: $text-color;
+    background-color: rgb(255, 0, 115);
   }
 }
 
-.hero__presentation {
-  font-size: 5rem;
-  // text-align: center;
-  margin-top: 18%;
-  margin-bottom: 4rem;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+.hero {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.presentation__job {
+.hero__presentation {
+  text-align: left;
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  animation: fadeIn 0.3s ease-in backwards;
+}
+
+.hero__job {
   font-size: 2rem;
   line-height: 3rem;
+  animation: fadeIn 0.3s ease-in 0.4s backwards;
+}
+
+.hero__name {
+  font-size: 5rem;
+  animation: fadeIn 0.3s ease-in 0.3s backwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(10rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
