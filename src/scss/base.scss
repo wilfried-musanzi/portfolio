@@ -1,8 +1,6 @@
-$primary-color: #495057;
-$secondary-color: #6c757d;
-$text-color: #f8f9fa;
-$text-color-primary: #ffc576;
-$text-color-secondary: #d4a373;
+$primary-color: rgb(255, 255, 255, 0.6);
+$secondary-color: #fafaff;
+$background-color: #001d3d;
 
 *,
 *::after,
@@ -21,8 +19,8 @@ body {
   line-height: 1;
   font-size: 1.6rem;
   font-weight: 400;
-  background: #1b1e3d;
-  color: rgb(255, 255, 255, 0.5);
+  background: $background-color;
+  color: $primary-color;
 }
 
 .container {
@@ -37,9 +35,4 @@ body {
 
 .section {
   height: 100vh;
-}
-
-.section__subtitle {
-  font-size: 5rem;
-  margin-bottom: 8rem;
 }

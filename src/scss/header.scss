@@ -9,12 +9,13 @@
   padding: 5rem;
 }
 
-.nav__item {
-  list-style: none;
-}
 .nav__list {
   display: flex;
   gap: 2rem;
+
+  .nav__item {
+    list-style: none;
+  }
 }
 
 .nav__link {
@@ -72,7 +73,6 @@
   &::before {
     display: none;
   }
-
   &:hover,
   &:active {
     background-color: rgb(100, 255, 218, 0.3);
@@ -80,6 +80,7 @@
 }
 
 .hero {
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
