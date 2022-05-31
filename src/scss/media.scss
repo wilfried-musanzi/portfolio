@@ -1,36 +1,11 @@
-@media only screen and(max-width: 71rem ) {
-  html {
-    font-size: 56%;
-  }
-}
-
 @media only screen and(max-width: 59rem ) {
   html {
-    font-size: 55%;
-  }
-  .hero__description {
-    font-size: 3rem;
+    font-size: 53%;
   }
 }
 
-@media only screen and(max-width: 54rem ) {
-  html {
-    font-size: 55%;
-  }
-  .hero__description {
-    font-size: 3rem;
-  }
-}
-
-@media only screen and(max-width: 32rem ) {
+@media only screen and(max-width: 25rem ) {
   html {
     font-size: 50%;
-  }
-
-  .hero__description {
-    font-size: 3rem;
-  }
-  .hero__name {
-    font-size: 3rem;
   }
 }
