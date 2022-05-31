@@ -3,13 +3,46 @@
   color: inherit;
 }
 
-.hero {
-  padding: 5rem;
+.section--hero {
+  display: flex;
+  gap: 4rem;
 }
-.hero__navigation {
+.hero__body {
+  align-self: center;
+}
+
+.hero__img {
+  width: 50%;
+  border: solid 0.1rem $text-color-primary;
+  border-radius: 0.4rem;
+  transition: all 0.5s;
+  background-color: hsl(166, 100%, 70%, 0.1);
+  position: relative;
+  animation: fadeIn duration timing-function delay iteration-count direction
+    fill-mode;
+  .img-me {
+    width: 80%;
+    opacity: 0.8;
+    background-color: hsl(166, 100%, 70%, 0.1);
+    border-radius: 0.8rem;
+    transition: all 0.5s;
+    position: absolute;
+    top: -2rem;
+    left: 4rem;
+    cursor: pointer;
+    &:hover,
+    &:active {
+      opacity: 1;
+      background-color: hsl(166, 100%, 70%, 0.2);
+    }
+  }
+}
+
+.header__navigation {
   display: flex;
   justify-content: flex-end;
   padding: 5rem;
+  margin-bottom: 4rem;
 }
 
 .link {
@@ -95,7 +128,7 @@
 }
 
 .hero__description {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 3rem;
 }
 
@@ -105,7 +138,7 @@
 }
 
 .hero__name {
-  font-size: 4rem;
+  font-size: 6rem;
   color: $secondary-color;
   margin-bottom: 5rem;
 }

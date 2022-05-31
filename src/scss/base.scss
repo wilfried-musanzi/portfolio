@@ -1,8 +1,8 @@
-$primary-color: rgb(255, 255, 255, 0.6);
+$primary-color: #ffffff99;
 $secondary-color: #fafaff;
-$background-color: #0b0d1a;
+$background-color: #111b31;
 $text-color-primary: #64ffda;
-$text-color-secondary: rgb(100, 255, 218, 0.3);
+$text-color-secondary: #64ffda4d;
 
 *,
 *::after,
@@ -32,9 +32,5 @@ body {
 }
 
 .sub-container {
-  max-width: 50rem;
-}
-
-.section {
-  height: 100vh;
+  max-width: 55rem;
 }
