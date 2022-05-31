@@ -5,35 +5,34 @@
 
 .section--hero {
   display: flex;
-  gap: 4rem;
+  gap: 3rem;
+  margin-bottom: 18rem;
 }
+
 .hero__body {
   align-self: center;
 }
 
 .hero__img {
-  width: 50%;
-  border: solid 0.1rem $text-color-primary;
+  width: 40%;
   border-radius: 0.4rem;
   transition: all 0.5s;
-  background-color: hsl(166, 100%, 70%, 0.1);
   position: relative;
-  animation: fadeIn duration timing-function delay iteration-count direction
-    fill-mode;
+  background-color: $green-tertiary;
+
   .img-me {
-    width: 80%;
-    opacity: 0.8;
-    background-color: hsl(166, 100%, 70%, 0.1);
+    width: 100%;
+    background-color: $green-tertiary;
     border-radius: 0.8rem;
     transition: all 0.5s;
     position: absolute;
-    top: -2rem;
-    left: 4rem;
+    top: -4rem;
+    left: -4rem;
     cursor: pointer;
-    &:hover,
-    &:active {
-      opacity: 1;
-      background-color: hsl(166, 100%, 70%, 0.2);
+    filter: brightness(0.7);
+    animation: fadeIn 0.4s ease backwards;
+    &:hover {
+      background-color: $green-secondary;
     }
   }
 }
@@ -47,7 +46,7 @@
 
 .link {
   @extend %a;
-  color: $text-color-primary;
+  color: $green-primary;
 }
 
 .nav__list {
@@ -76,7 +75,7 @@
 
   &:hover,
   &:active {
-    color: $text-color-primary;
+    color: $green-primary;
   }
 
   &::before {
@@ -85,7 +84,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom: 0.2rem solid $text-color-primary;
+    border-bottom: 0.2rem solid $green-primary;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -102,13 +101,13 @@
 .nav__link--contact {
   &:link,
   &:visited {
-    border: solid 0.1rem #64ffda;
+    border: solid 0.1rem $green-primary;
     border-radius: 0.4rem;
     display: inline-block;
     border-radius: 0.4rem;
     padding: 1.5rem 3rem;
     transition: all 0.3s;
-    color: $text-color-primary;
+    color: $green-primary;
   }
 
   &::before {
@@ -116,7 +115,7 @@
   }
   &:hover,
   &:active {
-    background-color: $text-color-secondary;
+    background-color: $green-secondary;
   }
 }
 
@@ -124,10 +123,12 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   font-family: "Fira Mono", sans-serif;
-  color: $text-color-primary;
+  color: $green-primary;
+  letter-spacing: 0.2rem;
+  animation: fadeIn 0.4s ease backwards;
 }
 
-.hero__description {
+.hero__about {
   font-size: 5rem;
   margin-bottom: 3rem;
 }
@@ -145,11 +146,53 @@
 
 @keyframes fadeIn {
   0% {
-    transform: translateY(10rem);
+    transform: translateY(2rem);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+.section--social {
+  position: fixed;
+  left: 0;
+  z-index: 2;
+}
+.social__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-left: 5rem;
+  align-items: center;
+
+  .link__item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    .social__link {
+      &:link,
+      &:visited {
+        @extend %a;
+        padding: 1rem;
+        border-radius: 50%;
+        transition: all 0.4s;
+        background-color: $green-tertiary;
+      }
+      &:hover,
+      &:active {
+        background-color: $green-secondary;
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 20rem;
+    margin-top: 4rem;
+    border-left: 0.1rem solid $primary-color;
+    transition: all 0.3s;
   }
 }

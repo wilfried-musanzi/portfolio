@@ -1,9 +1,9 @@
 $primary-color: #ffffff99;
 $secondary-color: #fafaff;
 $background-color: #111b31;
-$text-color-primary: #64ffda;
-$text-color-secondary: #64ffda4d;
-
+$green-primary: #64ffda;
+$green-tertiary: #66ffdb1a;
+$green-secondary: #66ffdb33;
 *,
 *::after,
 *::before {
@@ -26,7 +26,7 @@ body {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 110rem;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
