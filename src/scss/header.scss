@@ -3,10 +3,18 @@
   color: inherit;
 }
 
+.hero {
+  padding: 5rem;
+}
 .hero__navigation {
   display: flex;
   justify-content: flex-end;
   padding: 5rem;
+}
+
+.link {
+  @extend %a;
+  color: $text-color-primary;
 }
 
 .nav__list {
@@ -30,12 +38,12 @@
     text-transform: capitalize;
     transition: all 0.5s;
     letter-spacing: 0.2rem;
-    color: #fff;
+    color: $secondary-color;
   }
 
   &:hover,
   &:active {
-    color: #64ffda;
+    color: $text-color-primary;
   }
 
   &::before {
@@ -44,7 +52,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom: 0.2rem solid #64ffda;
+    border-bottom: 0.2rem solid $text-color-primary;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -67,7 +75,7 @@
     border-radius: 0.4rem;
     padding: 1.5rem 3rem;
     transition: all 0.3s;
-    color: #64ffda;
+    color: $text-color-primary;
   }
 
   &::before {
@@ -75,28 +83,19 @@
   }
   &:hover,
   &:active {
-    background-color: rgb(100, 255, 218, 0.3);
+    background-color: $text-color-secondary;
   }
-}
-
-.hero {
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__hello {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-family: "Fira Mono", sans-serif;
-  color: #64ffda;
+  color: $text-color-primary;
 }
 
 .hero__description {
   font-size: 5rem;
-  color: rgb(255, 255, 255, 0.5);
   margin-bottom: 3rem;
 }
 
@@ -107,7 +106,7 @@
 
 .hero__name {
   font-size: 5rem;
-  color: #ffff;
+  color: $secondary-color;
   margin-bottom: 5rem;
 }
 
