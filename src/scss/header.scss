@@ -24,15 +24,17 @@
     padding: 1.5rem 0;
     position: relative;
     display: inline-block;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: "Fira Mono", sans-serif;
+    text-transform: capitalize;
     transition: all 0.5s;
     letter-spacing: 0.2rem;
+    color: #fff;
   }
 
   &:hover,
   &:active {
-    color: rgb(255, 0, 115);
+    color: #64ffda;
   }
 
   &::before {
@@ -41,7 +43,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom: 0.2rem solid rgb(255, 0, 115);
+    border-bottom: 0.2rem solid #64ffda;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -58,12 +60,13 @@
 .nav__link--contact {
   &:link,
   &:visited {
-    border: solid 0.1rem rgb(255, 0, 115);
+    border: solid 0.1rem #64ffda;
     border-radius: 0.4rem;
     display: inline-block;
     border-radius: 0.4rem;
     padding: 1.5rem 3rem;
     transition: all 0.3s;
+    color: #64ffda;
   }
 
   &::before {
@@ -72,36 +75,39 @@
 
   &:hover,
   &:active {
-    color: $text-color;
-    background-color: rgb(255, 0, 115);
+    background-color: rgb(100, 255, 218, 0.3);
   }
 }
 
 .hero {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
 }
 
-.hero__presentation {
-  margin-top: -25rem;
-  font-size: 6rem;
-  margin-bottom: 4rem;
-  animation: fadeIn 0.3s ease-in backwards;
+.hero__hello {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Fira Mono", sans-serif;
+  color: #64ffda;
+}
+
+.hero__description {
+  font-size: 5rem;
+  color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 3rem;
 }
 
 .hero__job {
   font-size: 2rem;
   line-height: 3rem;
-  animation: fadeIn 0.3s ease-in 0.4s backwards;
 }
 
 .hero__name {
   font-size: 5rem;
-  animation: fadeIn 0.3s ease-in 0.3s backwards;
+  color: #ffff;
+  margin-bottom: 5rem;
 }
 
 @keyframes fadeIn {
