@@ -9,10 +9,6 @@
   margin-bottom: 18rem;
 }
 
-.hero__body {
-  align-self: center;
-}
-
 .hero__img {
   width: 40%;
   border-radius: 0.4rem;
@@ -37,16 +33,53 @@
   }
 }
 
-.header__navigation {
+.header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
+}
+.header__logo {
+  &:link,
+  &:visited {
+    @extend %a;
+    color: $green-primary;
+    font-family: "Fira Mono", sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    border: solid 0.1rem $green-secondary;
+    transition: all 0.3s;
+  }
+  &:hover,
+  &:active {
+    background-color: $green-tertiary;
+  }
 }
 
 .link {
   @extend %a;
   color: $green-primary;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 0.1rem solid $green-primary;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    transform: scale(1);
+  }
 }
 
 .nav__list {
@@ -163,7 +196,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-left: 5rem;
   align-items: center;
 
