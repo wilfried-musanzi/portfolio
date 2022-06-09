@@ -1,6 +1,7 @@
 $primary-color: #ffffff99;
 $secondary-color: #fafaff;
-$background-color: #111b31;
+$background-color: #020c1b;
+$background-color--light: #0a192f;
 $green-primary: #64ffda;
 $green-tertiary: #66ffdb1a;
 $green-secondary: #66ffdb33;
@@ -26,11 +27,10 @@ body {
 }
 
 .container {
-  max-width: 110rem;
-  padding: 0 3.2rem;
+  width: 120rem;
   margin: 0 auto;
 }
 
-.sub-container {
-  max-width: 55rem;
+.section{
+  height: 100vh;
 }

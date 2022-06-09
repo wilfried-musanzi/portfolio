@@ -5,86 +5,59 @@
 
 .section--hero {
   display: flex;
-  gap: 3rem;
-  margin-bottom: 18rem;
+  height: 100vh;
+}
+
+.hero__body {
+  width: 50%;
+  align-self: center;
 }
 
 .hero__img {
-  width: 40%;
-  border-radius: 0.4rem;
-  transition: all 0.5s;
-  position: relative;
-  background-color: $green-tertiary;
+  width: 50%;
+  align-self: flex-end;
+  text-align: center;
+  z-index: -1;
 
   .img-me {
     width: 100%;
-    background-color: $green-tertiary;
-    border-radius: 0.8rem;
-    transition: all 0.5s;
-    position: absolute;
-    top: -4rem;
-    left: -4rem;
-    cursor: pointer;
+    height: auto;
+    display: block;
     filter: brightness(0.7);
-    animation: fadeIn 0.4s ease backwards;
-    &:hover {
-      background-color: $green-secondary;
-    }
   }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  margin-bottom: 8rem;
+  padding-top: 5rem;
+  z-index: 1;
 }
+
+.number{
+  display: inline-block;
+  color: $green-primary;
+}
+
 .header__logo {
-  &:link,
-  &:visited {
+  &:link, &:visited {
     @extend %a;
     color: $green-primary;
-    font-family: "Fira Mono", sans-serif;
-    letter-spacing: 0.3rem;
-    font-size: 2.5rem;
+    font-size: 1rem;
     border-radius: 50%;
-    padding: 1rem 1.2rem;
-    border: solid 0.1rem $green-secondary;
-    transition: all 0.3s;
+    padding: 2rem;
+    border: solid .1rem $green-secondary;
+    transition: all .3s;
   }
-  &:hover,
-  &:active {
-    background-color: $green-tertiary;
+  &:hover, &:active{
+    background: $green-secondary;
   }
 }
 
-.link {
-  @extend %a;
-  color: $green-primary;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    border-bottom: 0.1rem solid $green-primary;
-    transform: scaleX(0);
-    opacity: 0;
-    transition: all 0.3s;
-  }
-
-  &:hover::before {
-    opacity: 1;
-    bottom: 0;
-    width: 100%;
-    transform: scale(1);
-  }
-}
 
 .nav__list {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 
   .nav__item {
     list-style: none;
@@ -95,7 +68,7 @@
   &:link,
   &:visited {
     @extend %a;
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     position: relative;
     display: inline-block;
     font-size: 1.5rem;
@@ -117,7 +90,7 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom: 0.2rem solid $green-primary;
+    border-bottom: 0.1rem solid $green-primary;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
@@ -137,8 +110,7 @@
     border: solid 0.1rem $green-primary;
     border-radius: 0.4rem;
     display: inline-block;
-    border-radius: 0.4rem;
-    padding: 1.5rem 3rem;
+    padding: 1rem 2rem;
     transition: all 0.3s;
     color: $green-primary;
   }
@@ -146,6 +118,7 @@
   &::before {
     display: none;
   }
+
   &:hover,
   &:active {
     background-color: $green-secondary;
@@ -153,79 +126,31 @@
 }
 
 .hero__hello {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   font-family: "Fira Mono", sans-serif;
   color: $green-primary;
-  letter-spacing: 0.2rem;
-  animation: fadeIn 0.4s ease backwards;
+  letter-spacing: 0.1rem;
 }
 
 .hero__about {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-bottom: 3rem;
+  color: $secondary-color;
 }
 
 .hero__job {
   font-size: 2rem;
   line-height: 3rem;
+
 }
 
 .hero__name {
-  font-size: 6rem;
-  color: $secondary-color;
+  font-size: 10rem;
+  font-family: 'Archivo Narrow', sans-serif;
+  letter-spacing: .2rem;
   margin-bottom: 5rem;
+
 }
 
-@keyframes fadeIn {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.section--social {
-  position: fixed;
-  left: 0;
-  z-index: 2;
-}
-.social__list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  font-size: 2.5rem;
-  margin-left: 5rem;
-  align-items: center;
 
-  .link__item {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    .social__link {
-      &:link,
-      &:visited {
-        @extend %a;
-        padding: 1rem;
-        border-radius: 50%;
-        transition: all 0.4s;
-        background-color: $green-tertiary;
-      }
-      &:hover,
-      &:active {
-        background-color: $green-secondary;
-      }
-    }
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    height: 20rem;
-    margin-top: 4rem;
-    border-left: 0.1rem solid $primary-color;
-    transition: all 0.3s;
-  }
-}
