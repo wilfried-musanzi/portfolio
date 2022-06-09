@@ -5,11 +5,13 @@
 
 .section--hero {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .hero__body {
   width: 50%;
+  margin-top: 10rem;
   align-self: center;
 }
 
@@ -17,10 +19,9 @@
   width: 50%;
   align-self: flex-end;
   text-align: center;
-  z-index: -1;
 
   .img-me {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     filter: brightness(0.7);
@@ -30,11 +31,17 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding-top: 5rem;
-  z-index: 1;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 5rem;
+  align-items: center;
+  transition: all .3s;
 }
 
-.number{
+.number {
   display: inline-block;
   color: $green-primary;
 }
@@ -49,7 +56,8 @@
     border: solid .1rem $green-secondary;
     transition: all .3s;
   }
-  &:hover, &:active{
+
+  &:hover, &:active {
     background: $green-secondary;
   }
 }
@@ -136,7 +144,6 @@
 .hero__about {
   font-size: 4rem;
   margin-bottom: 3rem;
-  color: $secondary-color;
 }
 
 .hero__job {
@@ -150,7 +157,22 @@
   font-family: 'Archivo Narrow', sans-serif;
   letter-spacing: .2rem;
   margin-bottom: 5rem;
-
+  color: $secondary-color;
 }
 
+
+.btn {
+  cursor: pointer;
+  display: none;
+  border: solid .1rem $green-primary;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.btns{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 4rem;
+}
 

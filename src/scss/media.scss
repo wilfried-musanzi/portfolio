@@ -1,0 +1,89 @@
+@media screen and (max-width: 68rem) {
+  html {
+    font-size: 60%;
+  }
+  .hero__about {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 61rem) {
+  html {
+    font-size: 60%;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__hello {
+    font-size: 2rem;
+  }
+  .hero__name {
+    font-size: 5rem;
+  }
+  .hero__about {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media screen and (max-width: 48rem) {
+  html {
+    font-size: 62%;
+  }
+  .hero__about {
+    font-size: 2.8rem;
+  }
+
+  .header__navigation {
+    background: $background-color--light;
+    position: absolute;
+    top: -5rem;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav__close{
+    .btn-open {
+      display: block;
+    }
+  }
+
+  .nav__open {
+    .btn-open {
+      display: none;
+    }
+
+    .btn-close {
+      display: block;
+    }
+
+    .header__navigation {
+      opacity: 1;
+      pointer-events: auto;
+      display: grid;
+      visibility: visible;
+      transform: translateX(0);
+
+      .nav__list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
