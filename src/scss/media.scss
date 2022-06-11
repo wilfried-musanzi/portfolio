@@ -104,5 +104,23 @@
     text-align: center;
 
   }
+}
+@media screen and (max-width: 17rem) {
+  .hero__hello {
+    font-size: 1.5rem;
+  }
+
+  .hero__name {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .hero__about {
+    font-size: 1.6rem;
+    text-align: center;
+  }
 
 }
+
