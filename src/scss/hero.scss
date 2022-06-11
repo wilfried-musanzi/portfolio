@@ -32,13 +32,14 @@
   display: flex;
   justify-content: space-between;
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 5rem;
   align-items: center;
   transition: all .3s;
+  height: 10vh;
+  padding-top: 5rem;
 }
 
 .number {
@@ -154,8 +155,8 @@
 
 .hero__name {
   font-size: 10rem;
-  font-family: 'Archivo Narrow', sans-serif;
-  letter-spacing: .2rem;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: .1rem;
   margin-bottom: 5rem;
   color: $secondary-color;
 }

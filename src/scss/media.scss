@@ -8,18 +8,17 @@
 }
 
 @media screen and (max-width: 61rem) {
-  html {
-    font-size: 60%;
-  }
   .hero__img {
     display: none;
   }
+
   .hero__body {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .hero__hello {
     font-size: 2rem;
   }
@@ -39,9 +38,7 @@
   .hero__about {
     font-size: 2.8rem;
   }
-  body {
-    position: relative;
-  }
+
 
   .nav__list {
     background: $background-color--light;
@@ -51,7 +48,7 @@
     right: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     transform: translateX(100%);
     justify-content: center;
     align-items: center;
@@ -89,7 +86,7 @@
   }
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 32rem) {
   .hero__hello {
     font-size: 1.5rem;
   }
@@ -105,6 +102,7 @@
 
   }
 }
+
 @media screen and (max-width: 17rem) {
   .hero__hello {
     font-size: 1.5rem;
