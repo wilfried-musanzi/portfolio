@@ -39,28 +39,31 @@
   .hero__about {
     font-size: 2.8rem;
   }
+  body {
+    position: relative;
+  }
 
-  .header__navigation {
+  .nav__list {
     background: $background-color--light;
     position: absolute;
-    top: -5rem;
+    top: 0;
     bottom: 0;
     right: 0;
-    width: 50vw;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     transform: translateX(100%);
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     transition: all 0.5s ease-in;
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
   }
-  .nav__close{
-    .btn-open {
-      display: block;
-    }
+
+  .btn-open {
+    display: block;
+
   }
 
   .nav__open {
@@ -72,18 +75,34 @@
       display: block;
     }
 
-    .header__navigation {
+    .nav__list {
+      display: none;
       opacity: 1;
       pointer-events: auto;
-      display: grid;
       visibility: visible;
       transform: translateX(0);
+      //display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      .nav__list{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
     }
   }
+}
+
+@media screen and (max-width: 30rem) {
+  .hero__hello {
+    font-size: 1.5rem;
+  }
+  .hero__name {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    display: inline-block;
+    text-align: center;
+  }
+  .hero__about {
+    font-size: 2rem;
+    text-align: center;
+
+  }
+
 }
