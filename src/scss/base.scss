@@ -24,12 +24,16 @@ body {
   font-weight: 400;
   background: $background-color;
   color: $primary-color;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
   max-width: 130rem;
   padding: 0 5rem;
   margin: 0 auto;
+}
+.sub-container {
+  max-width: 70rem;
+  margin: 0;
 }
 
