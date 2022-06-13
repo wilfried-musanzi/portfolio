@@ -1,44 +1,33 @@
 @media screen and (max-width: 68rem) {
   html {
-    font-size: 60%;
+    font-size: 58%;
   }
   .hero__about {
     font-size: 2.8rem;
   }
 }
 
-@media screen and (max-width: 61rem) {
+@media screen and (max-width: 64rem) {
   .hero__img {
     display: none;
   }
-
   .hero__body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .hero__hello {
-    font-size: 2rem;
-  }
+
   .hero__name {
     font-size: 5rem;
   }
   .hero__about {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
 }
 
 @media screen and (max-width: 48rem) {
-  html {
-    font-size: 62%;
-  }
-  .hero__about {
-    font-size: 2.8rem;
-  }
-
 
   .nav__list {
     background: $background-color--light;
@@ -78,47 +67,23 @@
       pointer-events: auto;
       visibility: visible;
       transform: translateX(0);
-      //display: flex;
       flex-direction: column;
       justify-content: center;
-
     }
   }
 }
 
-@media screen and (max-width: 32rem) {
-  .hero__hello {
-    font-size: 1.5rem;
-  }
-  .hero__name {
-    font-size: 6rem;
-    margin-bottom: 2rem;
-    display: inline-block;
-    text-align: center;
-  }
-  .hero__about {
-    font-size: 2rem;
-    text-align: center;
+@media screen and (max-width: 34rem) {
+    .hero__hello {
+      font-size: 2rem;
+    }
 
-  }
+    .hero__name {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero__about {
+      font-size: 2rem;
+    }
 }
-
-@media screen and (max-width: 17rem) {
-  .hero__hello {
-    font-size: 1.5rem;
-  }
-
-  .hero__name {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .hero__about {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-
-}
-
