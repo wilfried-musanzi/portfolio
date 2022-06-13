@@ -3,47 +3,57 @@
   color: inherit;
 }
 
-%before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  border-bottom: 0.1rem solid $green-primary;
-  transform: scaleX(0);
-  opacity: 0;
-  transition: all 0.3s;
+.section--hero {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.section--hero {
-  overflow: hidden;
-  padding-top: 10rem ;
+.hero__body {
+  width: 50%;
+  margin-top: 10rem;
+  align-self: center;
+}
+
+.hero__img {
+  width: 50%;
+  align-self: flex-end;
+  text-align: center;
+
+  .img-me {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(0.7);
+  }
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  transition: all .3s;
+  height: 10vh;
+  padding-top: 5rem;
 }
-
-
-.header__navigation {
+.header__navigation{
   overflow-x: hidden;
 }
-
 .number {
   display: inline-block;
   color: $green-primary;
 }
 
-
 .header__logo {
   &:link, &:visited {
     @extend %a;
     color: $green-primary;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border-radius: 50%;
     padding: 1.5rem;
     border: solid .1rem $green-secondary;
@@ -59,7 +69,6 @@
 .nav__list {
   display: flex;
   gap: 3rem;
-
   .nav__item {
     list-style: none;
   }
@@ -86,7 +95,15 @@
   }
 
   &::before {
-    @extend %before;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom: 0.1rem solid $green-primary;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all 0.3s;
   }
 
   &:hover::before {
@@ -126,10 +143,10 @@
 }
 
 .hero__about {
-  font-size: 5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 1.4;
+  font-weight: 500;
 }
-
 
 .hero__job {
   font-size: 2rem;
@@ -146,10 +163,10 @@
 .btn {
   cursor: pointer;
   display: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: $green-primary;
-  padding: .8rem;
-  border: solid .1rem $green-secondary;
 }
 
-
+.header__navigation{
+  overflow-x: hidden;
+}

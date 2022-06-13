@@ -1,51 +1,99 @@
 @media screen and (max-width: 68rem) {
   html {
-    font-size: 55%;
+    font-size: 58%;
+  }
+  .hero__about {
+    font-size: 2.8rem;
   }
 }
 
-@media screen and (max-width: 50rem) {
-  html {
-    font-size: 52%;
+@media screen and (max-width: 64rem) {
+  .hero__img {
+    display: none;
+  }
+  .hero__body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .hero__about{
-    font-size: 4rem;
-    line-height: 1.4;
-  }
 
-  .header__navigation {
-    transform: translateX(100%);
-    position: absolute;
-    pointer-events: none;
-    visibility: hidden;
-    opacity: 0;
+  .hero__name {
+    font-size: 5rem;
   }
-  .btn-open{
-    display: block;
-  }
-}
-
-@media screen and (max-width: 37rem) {
-  .hero__name{
-    font-size: 4rem;
-  }
-  .hero__about{
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-}
-
-@media screen and (max-width: 22rem) {
-  .hero__hello{
-    font-size: 1.8rem;
-  }
-  .hero__name{
+  .hero__about {
     font-size: 3rem;
   }
 
-  .hero__about{
+}
+
+@media screen and (max-width: 48rem) {
+
+  .nav__list {
+    background: $background-color--light;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    transform: translateX(100%);
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .btn-open {
+    display: block;
+
+  }
+
+  .nav__open {
+    .btn-open {
+      display: none;
+    }
+
+    .btn-close {
+      display: block;
+    }
+
+    .nav__list {
+      display: none;
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 34rem) {
+  .hero__hello {
     font-size: 2.5rem;
-    line-height: 1.4;
+  }
+
+  .hero__name {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero__about {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media screen and (max-width: 25rem) {
+  .hero__hello{
+    font-size: 2rem;
+  }
+  .hero__about {
+    font-size: 2rem;
   }
 }
