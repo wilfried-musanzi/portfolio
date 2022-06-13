@@ -41,7 +41,9 @@
   height: 10vh;
   padding-top: 5rem;
 }
-
+.header__navigation{
+  overflow-x: hidden;
+}
 .number {
   display: inline-block;
   color: $green-primary;
