@@ -23,3 +23,26 @@
   font-size: 4rem;
   margin-bottom: 4rem;
 }
+
+.link {
+  &:link,
+  &:visited {
+    @extend %a;
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+    color: $green-primary;
+  }
+
+  &::before {
+    @extend %before;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    bottom: 0;
+    width: 100%;
+    transform: scale(1);
+  }
+
+}
