@@ -1,16 +1,22 @@
 @media screen and (max-width: 68rem) {
   html {
-    font-size: 50%;
+    font-size: 58%;
+  }
+
+  .hero__about{
+    font-size: 4rem;
+  }
+  .hero__name{
+    font-size: 4rem;
+  }
+  .hero__hello{
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 52rem) {
   html {
-    font-size: 52%;
-  }
-  .hero__about{
-    font-size: 4rem;
-    line-height: 1.4;
+    font-size: 55%;
   }
 
   .header__navigation {
@@ -20,51 +26,57 @@
     visibility: hidden;
     opacity: 0;
   }
-  .hero__job{
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-  }
-  .btn-open{
+  .btn-open {
     display: block;
   }
 }
 
-@media screen and (max-width: 37rem) {
+@media screen and (max-width: 36rem) {
   html {
     font-size: 50%;
   }
+}
 
-  .hero__name{
-    font-size: 4rem;
-  }
-  .hero__about{
-    font-size: 2.5rem;
-    line-height: 1.4;
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 48%;
   }
 }
 
+@media screen and (max-width: 26em) {
+  html {
+    font-size: 45%;
+  }
 
-@media screen and (max-width: 22rem) {
-  .hero__name{
+  .hero__about{
     font-size: 3rem;
   }
-  .hero__about{
-    font-size: 2.5rem;
-    line-height: 1.4;
-  }
-
 }
 
-@media screen and (max-width: 20rem) {
-  .hero__hello{
-    font-size: 2rem;
-  }
-  .hero__name{
-    font-size: 2.5rem;
-  }
-  .hero__about{
-    font-size: 2rem;
-    line-height: 1.4;
+@media screen and (max-width: 20em) {
+  html {
+    font-size: 42%;
   }
 
+  .hero__about{
+    font-size: 2.5rem;
+  }
+
+  .hero__name {
+    font-size: 3rem;
+  }
 }
+@media screen and (max-width: 16em) {
+  html {
+    font-size: 40%;
+  }
+
+  .hero__about{
+    font-size: 2rem;
+  }
+
+  .hero__name {
+    font-size: 3rem;
+  }
+}
+

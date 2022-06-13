@@ -17,8 +17,10 @@
 
 .section--hero {
   overflow: hidden;
-  padding-top: 10rem ;
-  margin-bottom: 12.8rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
 }
 
 .header {
@@ -104,7 +106,30 @@
     border: solid 0.1rem $green-primary;
     border-radius: 0.4rem;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1.5rem 3rem;
+    transition: all 0.3s;
+    color: $green-primary;
+  }
+
+  &::before {
+    display: none;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $green-secondary;
+  }
+}
+
+
+.nav__link--info {
+  &:link,
+  &:visited {
+    border: solid 0.1rem $green-primary;
+    border-radius: 0.4rem;
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
     transition: all 0.3s;
     color: $green-primary;
   }
@@ -127,10 +152,10 @@
 }
 
 .hero__about {
-  font-size: 4rem;
+  font-size: 5rem;
+  line-height: 1.4;
   margin-bottom: 2rem;
 }
-
 
 .hero__job {
   font-size: 2rem;
