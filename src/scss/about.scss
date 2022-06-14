@@ -13,7 +13,6 @@
 }
 
 .about__img {
-
   .img__me {
     width: 25rem;
     background: $background-color--light;
@@ -22,5 +21,15 @@
 
   &:hover {
     padding: 0;
+  }
+}
+
+.tools__list{
+  margin-top: 2rem;
+  display: flex;
+  gap: 5rem;
+  ul {
+    list-style: none;
+    color: $secondary-color;
   }
 }
