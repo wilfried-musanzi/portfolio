@@ -24,10 +24,15 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    color: $green-primary;
   }
 }
 
 .card__body--text {
   font-size: 1.8rem;
   line-height: 3rem;
+}
+.project__heading{
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
