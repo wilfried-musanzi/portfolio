@@ -40,7 +40,7 @@
     align-items: center;
   }
 
-  .header__navigation {
+  .nav__list {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,14 +56,11 @@
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in;
-  }
-  .nav__list{
-    flex-direction: column;
-    justify-content: center;
     .nav__link{
       font-size: 2rem;
     }
   }
+
 
   .nav__open{
     .btn-open{
@@ -74,7 +71,7 @@
       z-index: 5;
     }
 
-    .header__navigation {
+    .nav__list {
       transform: translateX(0);
       background: $background-color--light;
       pointer-events: auto;

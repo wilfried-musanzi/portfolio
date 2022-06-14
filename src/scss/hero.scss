@@ -19,7 +19,9 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 90vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
 
@@ -27,9 +29,8 @@
   display: flex;
   justify-content: flex-end;
   padding: 5rem;
-  position: relative;
-  overflow-x: hidden;
 }
+
 
 
 .number {
