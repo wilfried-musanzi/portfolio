@@ -27,6 +27,14 @@
     justify-content: center;
     align-items: center;
   }
+
+  .contact__link{
+    &:link, &:visited{
+      @extend %a;
+      flex-direction: column;
+    }
+  }
+
   .header__navigation {
     display: flex;
     flex-direction: column;

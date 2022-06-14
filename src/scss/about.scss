@@ -1,5 +1,5 @@
 .section--about {
-  margin-bottom: 12.8rem;
+  margin-bottom: 17rem;
 }
 
 .about__body {
@@ -24,10 +24,11 @@
   }
 }
 
-.tools__list{
+.tools__list {
   margin-top: 4rem;
   display: flex;
   gap: 5rem;
+
   ul {
     list-style: none;
     color: $secondary-color;

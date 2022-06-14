@@ -1,0 +1,36 @@
+.section--contact{
+  margin-bottom: 12.8rem;
+}
+.contact__link{
+  &:link, &:visited{
+    @extend %a;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+.contact__body {
+  display: flex;
+  gap: 2rem;
+}
+
+.heading__tertiary{
+  color: $secondary-color;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contact__card{
+  border-radius: .5rem;
+  border: solid .1rem $green-secondary;
+  padding: 3rem;
+}
+
+.contact__icon{
+  font-size: 4rem;
+}
+
+.contact__text{
+  color: $green-primary;
+  font-size: 1.3rem;
+}

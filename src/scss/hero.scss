@@ -29,7 +29,8 @@
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-  padding-top:5rem;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .header__navigation {
@@ -39,7 +40,7 @@
 .number {
   display: inline-block;
   color: $green-primary;
-  font-family:"Fira Mono" ,sans-serif;
+  font-family: "Fira Mono", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -52,17 +53,18 @@
     list-style: none;
   }
 }
-.header__logo{
+
+.header__logo {
   &:link,
-  &:visited{
+  &:visited {
     @extend %a;
     color: $green-primary;
-    font-family:"Tangerine" ,sans-serif;
+    font-family: "Tangerine", sans-serif;
     font-size: 3rem;
   }
 
   &:hover,
-  &:active{
+  &:active {
     color: $green-primary;
   }
 }
