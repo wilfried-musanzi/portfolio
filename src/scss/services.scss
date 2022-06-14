@@ -1,10 +1,12 @@
 .section--services {
+  background: $background-color--light;
+  padding: 3rem;
   margin-bottom: 12.8rem;
 }
 
 .card {
   padding: 4rem;
-  background: $background-color--light;
+  background: $background-color;
   font-size: 1.8rem;
   line-height: 3rem;
   border-radius: .4rem;
