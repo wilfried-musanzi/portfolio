@@ -15,7 +15,6 @@ $green-secondary: #66ffdb33;
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -25,7 +24,7 @@ body {
   font-weight: 400;
   background: $background-color;
   color: $primary-color;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
