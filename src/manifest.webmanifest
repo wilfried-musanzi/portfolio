@@ -1,0 +1,6 @@
+{
+  "icons": [
+    { "src": "imgs/willy.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/willy.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}

@@ -17,20 +17,19 @@
 
 .section--hero {
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 5rem;
-  position: relative;
+  align-items: center;
   overflow: hidden;
+  padding-top:5rem;
 }
-
 
 .header__navigation {
   overflow-x: hidden;
@@ -42,29 +41,26 @@
 }
 
 
-.header__logo {
-  &:link, &:visited {
-    @extend %a;
-    color: $green-primary;
-    font-size: 2rem;
-    border-radius: 50%;
-    padding: 1.5rem;
-    border: solid .1rem $green-secondary;
-    transition: all .3s;
-  }
-
-  &:hover, &:active {
-    background: $green-secondary;
-  }
-}
-
-
 .nav__list {
   display: flex;
   gap: 3rem;
 
   .nav__item {
     list-style: none;
+  }
+}
+.header__logo{
+  &:link,
+  &:visited{
+    @extend %a;
+    color: $green-primary;
+    font-family:"Tangerine" ,sans-serif;
+    font-size: 3rem;
+  }
+
+  &:hover,
+  &:active{
+    color: $green-primary;
   }
 }
 
@@ -106,7 +102,7 @@
     border: solid 0.1rem $green-primary;
     border-radius: 0.4rem;
     display: inline-block;
-    padding: 1.5rem 3rem;
+    padding: 1rem 1.5rem;
     transition: all 0.3s;
     color: $green-primary;
   }
@@ -129,7 +125,7 @@
     border-radius: 0.4rem;
     display: inline-block;
     padding: 1.5rem 3rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     transition: all 0.3s;
     color: $green-primary;
   }
