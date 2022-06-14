@@ -8,7 +8,6 @@ const sectionHero = document.querySelector(".section--hero");
 btnOpen.addEventListener("click", (e) => {
     e.preventDefault();
     header.classList.add("nav__open");
-    document.querySelector(".btn-open").classList.add("rotate");
     sectionHero.classList.add("blur");
 })
 
