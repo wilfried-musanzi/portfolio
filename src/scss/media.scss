@@ -57,6 +57,14 @@
     opacity: 0;
     transition: all .3s ease-in;
   }
+  .nav__list{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .nav__link{
+      font-size: 2rem;
+    }
+  }
 
   .nav__open{
     .btn-open{
@@ -67,7 +75,6 @@
       z-index: 5;
     }
 
-
     .header__navigation {
       transform: translateX(0);
       background: $background-color--light;
@@ -75,14 +82,7 @@
       visibility: visible;
       z-index: 2;
       opacity: 1;
-      .nav__list{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .nav__link{
-          font-size: 2rem;
-        }
-      }
+
     }
   }
   .btn-open {
