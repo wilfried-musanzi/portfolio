@@ -9,16 +9,13 @@
     align-items: center;
   }
 }
+
 .contact__body {
   display: flex;
   gap: 2rem;
 }
 
-.heading__tertiary{
-  color: $secondary-color;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
+
 
 .contact__card{
   border-radius: .5rem;

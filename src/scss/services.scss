@@ -2,19 +2,21 @@
   margin-bottom: 12.8rem;
 }
 
-.card{
+.card {
   padding: 4rem;
   background: $background-color--light;
   font-size: 1.8rem;
   line-height: 3rem;
   border-radius: .4rem;
 }
-.card__heading{
+
+.card__heading {
   color: $secondary-color;
   margin-bottom: 2rem;
   font-size: 1.8rem;
 }
-.services__body{
+
+.services__body {
   display: flex;
   gap: 3rem;
 }

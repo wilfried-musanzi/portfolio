@@ -1,0 +1,33 @@
+.section--projects {
+  margin-bottom: 12.8rem;
+}
+
+.projects__body {
+  display: flex;
+  gap: 3rem;
+}
+
+.card__projects {
+  border: solid .1rem $green-tertiary;
+  padding: 3rem;
+  border-radius: .4rem;
+}
+
+.projects__icons--code{
+  font-size: 2.5rem;
+}
+
+.projects__link {
+  &:link, &:visited {
+    @extend %a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.card__body--text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}

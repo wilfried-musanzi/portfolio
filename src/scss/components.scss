@@ -18,12 +18,16 @@
   &::before {
     @extend %before;
   }
-
   &:hover::before {
     opacity: 1;
     bottom: 0;
     width: 100%;
     transform: scale(1);
   }
+}
 
+.heading__tertiary{
+  color: $secondary-color;
+  margin-bottom: 1rem;
+  font-size: 2rem;
 }
