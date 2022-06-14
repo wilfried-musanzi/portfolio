@@ -16,11 +16,18 @@
   }
 
   &::before {
-    @extend %before;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    border-bottom:solid .1rem $green-primary;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: all 0.3s;
   }
   &:hover::before {
     opacity: 1;
-    bottom: 0;
     width: 100%;
     transform: scale(1);
   }
