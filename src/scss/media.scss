@@ -30,7 +30,6 @@
 
   .contact__link{
     &:link, &:visited{
-      @extend %a;
       flex-direction: column;
     }
   }
