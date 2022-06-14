@@ -28,10 +28,10 @@
     align-items: center;
   }
 
-  .contact__link{
-    &:link, &:visited{
-      flex-direction: column;
-    }
+  .contact__body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .header__navigation {
