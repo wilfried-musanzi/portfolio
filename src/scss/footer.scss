@@ -3,5 +3,10 @@
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  background: $background-color--light;
+  background: $background-color;
+}
+
+.footer--text{
+  text-align: center;
+  line-height: 3rem;
 }

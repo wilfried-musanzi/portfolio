@@ -50,7 +50,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 80%;
+    width: 70%;
     height: 100%;
     pointer-events: none;
     visibility: hidden;
@@ -60,7 +60,6 @@
   .nav__list{
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     .nav__link{
       font-size: 2rem;
     }

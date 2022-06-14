@@ -1,5 +1,5 @@
 .section--about {
-  background: $background-color--light;
+  background: $background-color;
   padding: 3rem;
   margin-bottom: 17rem;
 }
@@ -17,7 +17,7 @@
 .about__img {
   .img__me {
     width: 25rem;
-    background: $background-color;
+    background: $background-color--light;
     border-radius: .8rem;
   }
 
