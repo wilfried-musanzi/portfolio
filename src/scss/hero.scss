@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 12.8rem;
 }
 
 .header {
@@ -38,6 +39,8 @@
 .number {
   display: inline-block;
   color: $green-primary;
+  font-family:"Fira Mono" ,sans-serif;
+  font-size: 1.5rem;
 }
 
 

@@ -1,27 +1,8 @@
 .heading__primary {
-  font-family: "Fira Mono", sans-serif;
-  font-size: 2rem;
-  color: $green-primary;
-  letter-spacing: 0.2rem;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  font-weight: 300;
-
-  &::after {
-    content: "";
-    width: 30rem;
-    height: 4rem;
-    margin-top: 4rem;
-    border-top: 0.01rem solid $primary-color;
-    transition: all 0.3s;
-  }
-}
-
-.heading__secondary {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 4rem;
+  color: $secondary-color;
+
 }
 
 .link {

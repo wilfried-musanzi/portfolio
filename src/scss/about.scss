@@ -1,8 +1,26 @@
 .section--about {
-  max-width: 80rem;
+  margin-bottom: 12.8rem;
+}
+
+.about__body {
+  display: flex;
+  gap: 5rem;
 }
 
 .about__me {
   font-size: 2rem;
   line-height: 3.2rem;
+}
+
+.about__img {
+
+  .img__me {
+    width: 25rem;
+    background: $background-color--light;
+    border-radius: .8rem;
+  }
+
+  &:hover {
+    padding: 0;
+  }
 }
