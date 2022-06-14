@@ -15,6 +15,7 @@ $green-secondary: #66ffdb33;
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,12 +32,9 @@ body {
   max-width: 120rem;
   padding: 0 5rem;
   margin: 0 auto;
+  overflow-x: hidden;
 }
-.container--2 {
-  max-width: 140rem;
-  padding: 0 5rem;
-  margin: 0 auto;
-}
+
 .sub-container {
   max-width: 70rem;
   margin: 0;
