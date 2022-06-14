@@ -16,18 +16,17 @@
 }
 
 .section--hero {
-  margin-bottom: 12.8rem;
+  margin-bottom: 19rem;
 }
 
 
 .header {
   display: flex;
   justify-content: flex-end;
-  overflow-x: hidden;
   padding: 5rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
+  overflow-x: hidden;
 }
-
 
 
 .number {
@@ -41,6 +40,7 @@
 .nav__list {
   display: flex;
   gap: 3rem;
+
   .nav__item {
     list-style: none;
   }
