@@ -13,7 +13,7 @@
   border-radius: .4rem;
 }
 
-.projects__icons--code{
+.projects__icons--code {
   font-size: 2.5rem;
 }
 
@@ -32,7 +32,9 @@
   font-size: 1.8rem;
   line-height: 3rem;
 }
-.project__heading{
+
+.project__heading {
+  color: $secondary-color;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.4rem;
