@@ -2,14 +2,14 @@
   html {
     font-size: 58%;
   }
-  .hero__about{
+  .hero__about {
     font-size: 4rem;
   }
 
-  .hero__name{
+  .hero__name {
     font-size: 4rem;
   }
-  .hero__hello{
+  .hero__hello {
     font-size: 2rem;
   }
 }
@@ -23,12 +23,12 @@
     align-items: center;
   }
 
-  .services__body{
+  .services__body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .projects__body{
+  .projects__body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -40,54 +40,56 @@
     align-items: center;
   }
 
-  .nav__list {
+  .header__navigation {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     transform: translateX(100%);
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 10rem;
     right: 0;
-    width: 70%;
+    width: 65%;
     height: 100vh;
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
     transition: all .3s ease-in;
-    .nav__link{
-      font-size: 2rem;
-    }
   }
 
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-  .nav__open{
-    .btn-open{
+  .nav__link {
+    font-size: 2rem;
+  }
+  .nav__open {
+    .btn-open {
       display: none;
     }
-    .btn-close{
+
+    .btn-close {
       display: block;
       z-index: 5;
     }
 
-    .nav__list {
+    .header__navigation {
       transform: translateX(0);
       background: $background-color--light;
       pointer-events: auto;
       visibility: visible;
       z-index: 2;
       opacity: 1;
-
     }
   }
   .btn-open {
     display: block;
   }
 }
-.blur{
-  filter: blur(.5rem);
-}
+
 
 @media screen and (max-width: 36rem) {
   html {
@@ -106,7 +108,7 @@
     font-size: 45%;
   }
 
-  .hero__about{
+  .hero__about {
     font-size: 3rem;
   }
 }
@@ -115,7 +117,7 @@
   html {
     font-size: 42%;
   }
-  .hero__about{
+  .hero__about {
     font-size: 2.5rem;
   }
 
@@ -125,7 +127,7 @@
 }
 
 @media screen and (max-width: 16em) {
-  .hero__about{
+  .hero__about {
     font-size: 2.2rem;
   }
 

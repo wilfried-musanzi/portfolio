@@ -19,15 +19,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
-  position: relative;
-  overflow-x: hidden;
+  height: 80vh;
 }
 
 .header {
   display: flex;
   justify-content: flex-end;
   padding: 5rem;
+
+}
+
+.main{
+  position: relative;
+  overflow-x: hidden;
 }
 
 
