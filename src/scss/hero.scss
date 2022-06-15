@@ -24,9 +24,12 @@
 
 .header {
   display: flex;
-  justify-content: flex-end;
-  padding: 5rem;
-
+  justify-content: space-between;
+  padding: 8rem;
+  align-items: center;
+}
+.img__logo{
+  width: 5rem;
 }
 
 .main{
@@ -174,6 +177,9 @@
   display: none;
   font-size: 2.5rem;
   color: $green-primary;
+}
+
+.ph-x, .ph-list{
   padding: 1rem;
   border: solid .1rem $green-secondary;
 }

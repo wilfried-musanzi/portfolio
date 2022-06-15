@@ -1,11 +1,16 @@
-@media screen and (max-width: 68rem) {
+@media screen and (max-width: 84em) {
   html {
     font-size: 58%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.5%;
   }
   .hero__about {
     font-size: 4rem;
   }
-
   .hero__name {
     font-size: 4rem;
   }
@@ -14,9 +19,9 @@
   }
 }
 
-@media screen and (max-width: 52rem) {
+@media screen and (max-width: 59em) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
   .about__body {
     flex-direction: column;
@@ -34,11 +39,6 @@
     align-items: center;
   }
 
-  .contact__body {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   .header__navigation {
     display: flex;
@@ -90,43 +90,28 @@
   }
 }
 
-
-@media screen and (max-width: 36rem) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media screen and (max-width: 33em) {
-  html {
-    font-size: 48%;
-  }
-}
-
-@media screen and (max-width: 26em) {
+@media screen and (max-width: 44em) {
   html {
     font-size: 45%;
   }
-
-  .hero__about {
-    font-size: 3rem;
+  .contact__body {
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media screen and (max-width: 20em) {
-  html {
-    font-size: 42%;
+  .contact__icon{
+    width: 6rem;
+    align-self: end;
   }
   .hero__about {
     font-size: 2.5rem;
   }
-
   .hero__name {
     font-size: 3rem;
   }
 }
 
 @media screen and (max-width: 16em) {
+
   .hero__about {
     font-size: 2.2rem;
   }
