@@ -46,9 +46,9 @@
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: 10rem;
+    bottom: 0;
     right: 0;
     width: 65%;
     height: 100vh;
@@ -62,10 +62,14 @@
     flex-direction: column;
     justify-content: center;
   }
-
   .nav__link {
-    font-size: 3rem;
+    &:link,
+    &:visited {
+      @extend %a;
+      font-size: 2rem;
+    }
   }
+
   .nav__open {
     .btn-open {
       display: none;
@@ -84,6 +88,10 @@
       z-index: 2;
       opacity: 1;
     }
+
+    body{
+      overflow-y: hidden;
+    }
   }
   .btn-open {
     display: block;
@@ -94,13 +102,10 @@
   html {
     font-size: 45%;
   }
-  .contact__body {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .contact__icon{
-    width: 10rem;
 
+  .contact__body {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
   }
   .hero__about {
     font-size: 2.5rem;
@@ -108,6 +113,10 @@
   .hero__name {
     font-size: 3rem;
   }
+  .tool__link{
+    font-size: 1.6rem;
+  }
+
 }
 
 @media screen and (max-width: 16em) {
@@ -119,5 +128,6 @@
   .hero__name {
     font-size: 3rem;
   }
+
 }
 
