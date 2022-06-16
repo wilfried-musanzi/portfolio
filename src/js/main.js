@@ -28,7 +28,7 @@ sectionHero.addEventListener("click", () => {
 
 menu.addEventListener('click', (e) => {
     e.preventDefault();
-    if (!e.target.classList.contains('nav__link')) return
+    if (!e.target.classList.contains('nav__link')) return;
     hideMenu()
     const id = e.target.getAttribute('href');
     document.querySelector(id).scrollIntoView({behavior: 'smooth'});
