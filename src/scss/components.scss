@@ -32,6 +32,9 @@
     transform: scale(1);
   }
 }
+.unscrollable{
+  overflow: hidden;
+}
 
 .heading__tertiary{
   color: $secondary-color;
