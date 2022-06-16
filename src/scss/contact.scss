@@ -6,7 +6,7 @@
   &:link, &:visited {
     @extend %a;
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
     align-items: center;
   }
 }
@@ -14,8 +14,9 @@
 
 
 .contact__body {
-  display: flex;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
 
 }
 

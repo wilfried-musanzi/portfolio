@@ -11,6 +11,13 @@
   border: solid .1rem $green-secondary;
   padding: 3rem;
   border-radius: .4rem;
+  transition: all .3s;
+  &:hover{
+    border: solid .1rem $green-primary;
+    .project__heading{
+      color: $green-primary;
+    }
+  }
 }
 
 .projects__icons--code {
