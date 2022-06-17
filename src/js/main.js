@@ -36,24 +36,23 @@ menu.addEventListener('click', (e) => {
 });
 
 
-const allSections = document.querySelectorAll('.fadeIn');
+const fadeIn = document.querySelectorAll('.fadeIn');
 
 const revealSection = function (entries, observer) {
     const [entry] = entries;
     if (!entry.isIntersecting) return;
     entry.target.classList.remove('hidden');
-    observer.unobserve(entry.target);
 };
+
 
 const sectionObserver = new IntersectionObserver(revealSection, {
     root: null,
-    threshold: 0.1,
+    threshold: .1,
 });
 
-allSections.forEach(function (section) {
-    sectionObserver.observe(section);
-   section.classList.add('hidden');
-
+fadeIn.forEach(function (elemetn) {
+    sectionObserver.observe(elemetn);
+    elemetn.classList.add('hidden');
 });
 
 
