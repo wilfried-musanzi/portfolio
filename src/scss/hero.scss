@@ -138,6 +138,7 @@
     font-size: 2rem;
     transition: all 0.3s;
     color: $green-primary;
+    animation: fadeInBtn .3s ease-in .9s backwards;
   }
 
   &::before {
