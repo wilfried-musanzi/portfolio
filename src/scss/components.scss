@@ -21,32 +21,47 @@
     left: 0;
     bottom: 0;
     width: 0;
-    border-bottom:solid .1rem $green-primary;
+    border-bottom: solid .1rem $green-primary;
     transform: scaleX(0);
     opacity: 0;
     transition: all 0.3s;
   }
+
   &:hover::before {
     opacity: 1;
     width: 100%;
     transform: scale(1);
   }
 }
-.unscrollable{
+
+.unscrollable {
   overflow: hidden;
 }
 
-.community{
+.community {
   color: #00b4d8;
 }
 
 
-.heading__tertiary{
+.heading__tertiary {
   color: $secondary-color;
   margin-bottom: 1rem;
   font-size: 2rem;
 }
 
-.blur{
+.blur {
   filter: blur(.5rem);
+}
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
