@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
-
+  transition: all .5s;
 }
 
 .contact__card {
