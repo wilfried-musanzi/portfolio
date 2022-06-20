@@ -34,14 +34,16 @@
 
 
 .img__logo{
-  width: 5rem;
+  img{
+    width: 5rem;
+    height: auto;
+  }
 }
 
-.main{
+.main {
   position: relative;
   overflow-x: hidden;
 }
-
 
 
 .number {
@@ -210,7 +212,7 @@
   color: $green-primary;
 }
 
-.ph-x, .ph-list{
+.ph-x, .ph-list {
   padding: 1rem;
   border: solid .1rem $green-secondary;
 }

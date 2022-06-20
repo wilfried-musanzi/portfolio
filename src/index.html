@@ -4,16 +4,15 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Wilfried Musanzi Softwarre developer"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 ,user-scalable=no"/>
-    <script src="https://unpkg.com/phosphor-icons"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <script defer src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@200;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scss/main.scss">
     <link rel="icon" href="imgs/w.png"/>
     <link rel="apple-touch-icon" href="imgs/w.png"/>
     <link rel="manifest" href="manifest.webmanifest"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&family=Inter:wght@200;400;500;600&family=Tangerine&display=swap"
-          rel="stylesheet">
     <script type="module" defer src="js/main.js"></script>
     <title>Musanzi &mdash; Portfolio</title>
 </head>
@@ -21,7 +20,7 @@
 <main class="main">
     <div class="navbar">
         <header class="header container">
-            <a href=""><img src="imgs/w.png" class="img__logo" alt="img logo"></a>
+            <a href="" class="img__logo"><img src="imgs/w.png" alt="img logo"></a>
             <nav class="header__navigation">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -46,10 +45,10 @@
             </div>
         </header>
     </div>
-    <section class="section container section--hero">
+    <section class="section--hero  container">
         <div class="hero__body ">
             <p class="hero__hello">Hi, my name is</p>
-            <h3 class="hero__name">Wilfried Musanzi</h3>
+            <strong class="hero__name">Wilfried Musanzi</strong>
             <h3 class="hero__about">
                 I build human centered web applications.
             </h3>
@@ -67,7 +66,7 @@
     </section>
     <section class="section section--about" id="section--about">
         <div class="container">
-            <h4 class="heading__primary fadeIn"><span class="number">01.</span> About Me</h4>
+            <h4 class="fadeIn heading__primary"><span class="number">01.</span> About Me</h4>
             <div class="about__body fadeIn">
                 <div class="about__me sub-container">
                     My name is wilfried musanzi, my love for the web started 2 years ago, I am a student in bac 2

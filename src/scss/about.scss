@@ -20,12 +20,15 @@
   border-radius: .4rem;
   border: solid .1rem $green-secondary;
   transition: all .5s;
-  .img__me {
+
+  img {
     width: 25rem;
+    height: auto;
     background: $background-color--light;
     border-radius: .4rem;
   }
-  &:hover{
+
+  &:hover {
     border: solid .1rem $green-primary;
   }
 
@@ -35,6 +38,7 @@
   margin-top: 4rem;
   display: flex;
   gap: 3rem;
+
   ul {
     list-style: none;
     color: $secondary-color;
